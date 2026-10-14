@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d68">
+<title>Our Little Story — Happy Anniversary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floating-hearts" aria-hidden="true"></div>
+<main>
+  <section id="cover" class="screen cover-screen">
+    <div class="cover-note">a little letter for you <span>♡</span></div>
+    <button class="envelope-button" id="openEnvelope" aria-label="Buka amplop surat anniversary">
+      <img src="assets/envelope.jpg" alt="Amplop biru dengan hati kecil">
+      <span class="open-hint">klik untuk membuka surat</span>
+    </button>
+    <p class="cover-caption">one year of us · 365 days of little memories</p>
+  </section>
+
+  <section id="letter" class="screen letter-screen hidden">
+    <div class="section-kicker">a letter from my heart</div>
+    <h1>Happy 1st Anniversary <span>♡</span></h1>
+    <div class="music-card">
+      <div class="music-icon">♫</div>
+      <div class="music-copy">
+        <strong>Our song: About You</strong>
+        <span>The 1975 · putar untuk menemani surat ini</span>
+      </div>
+      <button class="music-toggle" id="playSong" type="button">Putar lagu ♫</button>
+    </div>
+    <div class="youtube-wrap hidden" id="songPlayer">
+      <iframe id="songFrame" title="About You — The 1975 on Spotify" src="about:blank"
+        data-src="https://open.spotify.com/embed/track/1fDFHXcykq4iw8Gg7s5hG9?utm_source=generator"
+        allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="music-note">Tekan tombol play di Spotify. Lagu berdurasi sekitar 5 menit 26 detik; pemutaran penuh mengikuti dukungan Spotify dan koneksi internet.</p>
+    </div>
+    <article class="letter-card">
+      <div class="tape"></div>
+      <p class="handwriting">happy anniversary 1 year, sayangkuu cintakuu 🤍🥺💐</p>
+      <p>Ga kerasa yaa, kita udah sejauh ini. Makasih udah hadir di hidup aku, makasih udah bertahan sama aku yang kadang nyebelin, manja, suka ngambek, dan banyak maunya ini.</p>
+      <p>Maaf yaa kalau selama sama aku kamu sering capek, kesel, atau ngerasa aku belum jadi pasangan yang baik buat kamu. Aku mungkin bukan cewe yang sempurna, tapi aku percaya sama kamu dan aku tulus banget.</p>
+      <p>Aku nggak minta hubungan kita selalu bahagia. Aku cuma minta kita jangan gampang nyerah satu sama lain. Kalau ada masalah, ayo kita selesain bareng-bareng, yaa?</p>
+      <p>Aku masih mau sama kamu, masih mau bikin banyak kenangan sama kamu, dan masih mau jadi orang yang kamu cari saat kamu capek sama dunia.</p>
+      <p>Semoga bukan cuma satu tahun ini, tapi tahun-tahun berikutnya juga tetap ada kita. Aku pengen kamu jadi orang yang nemenin aku sampai nanti, sampai kita bisa lihat ke belakang dan bilang, “ternyata kita berhasil sejauh ini yaa.” 🫂💗</p>
+      <p>Aku sayang banget sama kamu, lebih dari yang bisa aku jelasin lewat kata-kata. Jangan pergi yaa, sayang. Kita usahain semuanya bareng-bareng.</p>
+      <p class="signoff">happy anniversary, rumah ternyamanku. i love you, always and forever. 🤍</p>
+    </article>
+    <button class="primary-btn" id="toMemories">lanjut lihat memories <span>♡</span></button>
+  </section>
+
+  <section id="memories" class="screen memories-screen hidden">
+    <div class="section-kicker">little moments, big feelings</div>
+    <h2>Our Memories</h2>
+    <p class="section-intro">Setiap foto punya cerita kecil yang selalu ingin aku simpan.</p>
+    <div class="memory-hero">
+      <button class="memory-title-button" id="openGallery" type="button" aria-label="Klik untuk melihat foto-foto kenangan">
+        <img class="memory-title-img reveal" src="assets/memories-title.png" alt="Our Memories">
+        <span class="banner-click-hint">klik untuk melihat foto ♡</span>
+      </button>
+      <img class="bird bird-one floaty" src="assets/birds.png" alt="Ilustrasi burung biru">
+      <img class="flower flower-one floaty" src="assets/bouquet-red.png" alt="Buket bunga merah">
+    </div>
+    <div class="gallery-content hidden" id="galleryContent">
+    <div class="memory-grid">
+      <button class="memory-tile tall" data-photo="assets/beach-memory.png" data-caption="Di tempat sederhana, sama kamu jadi kenangan yang istimewa.">
+        <img src="assets/beach-memory.png" alt="Kenangan di pantai"><span class="tile-label">a day to remember ↗</span>
+      </button>
+      <button class="memory-tile" data-photo="assets/couple-memory.png" data-caption="Salah satu potongan kecil dari cerita kita. Semoga masih banyak cerita setelah ini.">
+        <img src="assets/couple-memory.png" alt="Foto kenangan bersama"><span class="tile-label">my favorite person ↗</span>
+      </button>
+      <button class="memory-tile camera-tile" data-photo="assets/camera-memory.png" data-caption="Kalau bisa, aku mau menyimpan semua momen kecil kita seperti foto ini.">
+        <img src="assets/camera-memory.png" alt="Foto di dalam kamera"><span class="tile-label">captured moments ↗</span>
+      </button>
+      <button class="memory-tile polaroid-tile" data-photo="assets/polaroid-memory.png" data-caption="Senyum kamu selalu jadi bagian favorit dari hari-hariku.">
+        <img src="assets/polaroid-memory.png" alt="Foto polaroid berdua"><span class="tile-label">favorite frame ↗</span>
+      </button>
+    </div>
+    <div class="decorative-quote"><span>“</span><p>Kalau waktunya bisa diulang, aku tetap mau bertemu kamu di cerita yang sama.</p><span>♡</span></div>
+    <div class="sticker-row">
+      <img src="assets/special.png" alt="Special">
+      <img src="assets/my-boy.png" alt="My boy, my euphoria, my babe">
+      <img src="assets/love-you.png" alt="Love you">
+    </div>
+    </div>
+    <button class="primary-btn hidden" id="toFinal">ada satu hal lagi… <span>♡</span></button>
+  </section>
+
+  <section id="final" class="screen final-screen hidden">
+    <div class="final-glow"></div>
+    <img class="final-flower" src="assets/tulips.png" alt="Buket bunga tulip">
+    <div class="section-kicker">to my favorite human</div>
+    <h2>And our story<br><em>keeps going.</em></h2>
+    <p class="final-message">Terima kasih sudah memilih untuk tetap ada. Semoga kita terus belajar, tumbuh, dan saling menjaga—pelan-pelan, bareng-bareng.</p>
+    <div class="final-heart">♡</div>
+    <p class="forever">happy anniversary, sayangku.<br><strong>i love you, always.</strong></p>
+    <button class="text-btn" id="restart">baca lagi dari awal ↺</button>
+  </section>
+</main>
+
+<div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto kenangan">
+  <button class="lightbox-close" id="closeLightbox" aria-label="Tutup">×</button>
+  <button class="lightbox-arrow prev" id="prevPhoto" aria-label="Foto sebelumnya">‹</button>
+  <figure><img id="lightboxImage" src="" alt="Foto kenangan diperbesar"><figcaption id="lightboxCaption"></figcaption></figure>
+  <button class="lightbox-arrow next" id="nextPhoto" aria-label="Foto berikutnya">›</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
